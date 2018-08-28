@@ -1,7 +1,10 @@
 <h1>Display your Pirate here</h1>
-
+<%= @pir.name @pir.weight @pir.height %>
 
 <h2>Display your first ship here</h2>
-
+  <% @shipone = Ship.new(@ships[0]) %>
+  <%= @shipone.name @shipone.type @shipone.booty %>
 
 <h2>Display your second ship here</h2>
+<% @shiptwo = Ship.new(@ships[1]) %>
+<%= @shiptwo.name @shiptwo.type @shiptwo.booty %>
