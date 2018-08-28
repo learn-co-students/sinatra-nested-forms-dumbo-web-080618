@@ -1,7 +1,14 @@
 <h1>Display your Pirate here</h1>
-
+<%= @hash["pirate"]["name"] %>
+<%= @hash["pirate"]["weight"] %>
+<%= @hash["pirate"]["height"] %>
 
 <h2>Display your first ship here</h2>
-
+<%= @hash["pirate"]["ships"][0][:name] %>
+<%= @hash["pirate"]["ships"][0][:type] %>
+<%= @hash["pirate"]["ships"][0][:booty] %>
 
 <h2>Display your second ship here</h2>
+<%= @hash["pirate"]["ships"][1][:name] %>
+<%= @hash["pirate"]["ships"][1][:type] %>
+<%= @hash["pirate"]["ships"][1][:booty] %>
